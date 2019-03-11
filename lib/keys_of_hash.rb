@@ -5,7 +5,7 @@ class Hash
     keys = []
     arguments.map {|arg|
       binding.pry
-      self.each {|key, value| keys << value if value == arguments
+      self.each {|key, value| keys << value if value == arguments}
     }
 
   end
