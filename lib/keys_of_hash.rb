@@ -6,7 +6,7 @@ class Hash
     arguments.map {|arg|
       self.each {|key, value|
         binding.pry
-        keys << value if value == arguments}
+        keys << value if value == arg}
     }
 
   end
