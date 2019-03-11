@@ -2,7 +2,9 @@ require "pry"
 
 class Hash
   def keys_of(*arguments)
-    binding.pry
-    self
+    arguments.map {|arg| 
+      binding.pry
+      self.find {|key, value| value == arg}
+    }
   end
 end
