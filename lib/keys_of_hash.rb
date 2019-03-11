@@ -1,5 +1,7 @@
+binding.pry
+
 class Hash
   def keys_of(*arguments)
-    self.map {|key, value| key if value == arguments}
+    self
   end
 end
