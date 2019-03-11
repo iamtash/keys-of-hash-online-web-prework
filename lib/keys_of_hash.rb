@@ -2,10 +2,10 @@ require "pry"
 
 class Hash
   def keys_of(*arguments)
-
+    keys = []
     arguments.map {|arg|
       binding.pry
-      self.find {|key, value| value == arg}.first
+      self.each {|key, value| keys << value if value == arguments
     }
 
   end
