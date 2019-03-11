@@ -8,6 +8,7 @@ class Hash
         #binding.pry
         keys << value if value == arg}
     }
+    keys
 
   end
 end
