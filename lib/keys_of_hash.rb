@@ -4,8 +4,9 @@ class Hash
   def keys_of(*arguments)
     keys = []
     arguments.map {|arg|
-      binding.pry
-      self.each {|key, value| keys << value if value == arguments}
+      self.each {|key, value|
+        binding.pry
+        keys << value if value == arguments}
     }
 
   end
